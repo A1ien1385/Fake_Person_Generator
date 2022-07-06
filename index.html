@@ -9,6 +9,22 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <button>Download users</button>
+    <form class="generator">
+      <label class="generator__input-name">
+        Choose gender
+        <select class="generator__select" name="gender">
+          <option value="both" selected>All</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </label>
+
+      <label class="generator__input-name">
+        Amount:
+        <input class="generator__input" type="number" value="5" />
+      </label>
+
+      <input type="submit" class="button" value="Download" />
+    </form>
   </body>
 </html>

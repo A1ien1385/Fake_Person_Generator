@@ -1,4 +1,5 @@
-const downloadUsers = () => {
+const downloadUsers = (e) => {
+  e.preventDefault();
   const url = "https://randomuser.me/api/?results=10";
   fetch(url)
     .then((response) => {
@@ -13,4 +14,4 @@ const downloadUsers = () => {
     .catch((err) => console.log(err));
 };
 
-document.querySelector("button").addEventListener("click", downloadUsers);
+document.querySelector(".generator").addEventListener("submit", downloadUsers);

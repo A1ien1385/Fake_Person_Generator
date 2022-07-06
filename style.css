@@ -1,3 +1,23 @@
-button {
+body {
+  background-color: #d1bea8;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px auto;
+  max-width: 1200px;
+  font-size: 1.4rem;
+}
+
+select,
+input,
+.button {
   border-radius: 10px;
+  background-color: #f9e5bc;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 0;
+  margin: 10px;
+  font-size: 1.4rem;
+}
+
+.button:hover {
+  background-color: white;
 }
