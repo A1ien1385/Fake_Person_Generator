@@ -1,5 +1,10 @@
 const downloadUsers = (e) => {
   e.preventDefault();
+
+  const usersNumbers = document.querySelector('[name = "users-number"]').value;
+  const usersGender = document.querySelector('[name = "gender"]').value;
+  console.log(usersNumbers, usersGender);
+
   const url = "https://randomuser.me/api/?results=10";
   fetch(url)
     .then((response) => {
