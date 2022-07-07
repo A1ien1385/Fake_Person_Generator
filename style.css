@@ -23,11 +23,12 @@ input,
 }
 
 .user-list {
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.4);
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border-radius: 15px;
 }
 
 .user {

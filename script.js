@@ -36,3 +36,9 @@ const showUsers = (users) => {
   });
 };
 document.querySelector(".generator").addEventListener("submit", downloadUsers);
+
+const refresh = () => {
+  window.location.reload();
+};
+
+document.querySelector(".refresh").addEventListener("click", refresh);
