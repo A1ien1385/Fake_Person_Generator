@@ -21,3 +21,21 @@ input,
 .button:hover {
   background-color: white;
 }
+
+.user-list {
+  background-color: #eee;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.user {
+  flex-basis: 30%;
+  display: flex;
+}
+
+.user__image {
+  order: -1;
+  padding: 20px;
+}

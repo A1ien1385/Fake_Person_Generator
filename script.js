@@ -25,13 +25,14 @@ const showUsers = (users) => {
   users.forEach((user) => {
     const item = document.createElement("div");
     item.className = "user";
-    item.innerHTML = `
-    <div class="user_name">${user.name.title.toUpperCase()} 
+    item.innerHTML = `<div class="user__name">${user.name.title.toUpperCase()} 
     ${user.name.first.toUpperCase()}
     ${user.name.last.toUpperCase()}
     </div>
-    <img class=""user__image src=>
+    <img class="user__image" src=${user.picture.medium}>
     `;
+
+    resultArea.appendChild(item);
   });
 };
 document.querySelector(".generator").addEventListener("submit", downloadUsers);
